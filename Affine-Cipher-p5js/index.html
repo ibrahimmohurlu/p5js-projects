@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <script src="sketch.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-auto">
+        <main></main>
+      </div>
+      <div class="col-4">
+        <h1>Affine Cipher Test</h1>
+        
+        <div class="btn-group-vertical">
+          <div class="btn-group" role="group" aria-label="a">
+            <button id="aDown" type="button" class="btn btn-danger btn-lg">-</button>
+            <button type="button" class="btn btn-primary btn-lg">a</button>
+            <button id="aUp" type="button" class="btn btn-success btn-lg">+</button>
+            <button id="aCoeff" type="button" class="btn btn-secondary btn-lg" disabled></button>
+          </div>
+          <div class="btn-group" role="group" aria-label="n">
+            <button id="nDown" type="button" class="btn btn-danger btn-lg">-</button>
+            <button type="button" class="btn btn-primary btn-lg">n</button>
+            <button id="nUp" type="button" class="btn btn-success btn-lg">+</button>
+            <button id="nCoeff" type="button" class="btn btn-secondary btn-lg" disabled></button>
+          </div>
+          <div class="btn-group" role="group" aria-label="b">
+            <button id="bDown" type="button" class="btn btn-danger btn-lg">-</button>
+            <button type="button" class="btn btn-primary btn-lg">b</button>
+            <button id="bUp" type="button" class="btn btn-success btn-lg">+</button>
+            <button id="bCoeff" type="button" class="btn btn-secondary btn-lg" disabled></button>
+          </div>
+        </div>
+        <p id="equation" class="fs-2"></p>  
+        <textarea id="plain-text" class="form-control" rows="4" placeholder="Enter your text to Encrypt"></textarea>
+        <button id="encrypt-button" type="submit" class="btn btn-primary mb-3">Encrypt</button>
+        <button id="decrypt-button" type="submit" class="btn btn-primary mb-3" disabled>Decrypt</button>
+        <textarea id="cipher-text" class="form-control" type="text" value="" rows="4" readonly></textarea>
+
+      </div>
+      
+    </div>
+  </div>
+
+
+</body>
+
+</html>
